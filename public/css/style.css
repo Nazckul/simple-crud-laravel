@@ -1,0 +1,164 @@
+/* Establecer el tamaño de fuente base */
+html {
+    font-size: 16px;
+  }
+  
+  /* Estilos globales */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .text-center{
+    text-align: center;
+  }
+  
+  /* Estilos de encabezado */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  /* Estilos de navegación */
+  nav {
+    background-color: #444;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Estilos de sección principal */
+  .main {
+    padding: 20px;
+  }
+  
+  /* Estilos de pie de página */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  h1{
+    text-align: center;
+    margin: 50px;
+  }
+
+  h2{
+    text-align: center;
+    color: rgb(4, 70, 4);
+    text-transform: uppercase;
+  }
+
+  button {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid rgb(12, 122, 12);
+    border-radius: 0.6em;
+    color: rgb(12, 122, 12);
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 0.3em 1.7em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+
+  button:hover{
+    box-shadow: 0 0 40px 40px rgb(12, 122, 12) inset;
+    color: #fff;
+    outline: 0;
+  }
+
+  button:focus{
+    color: #fff;
+    outline: 0;
+  }
+
+  .card{
+    margin: 40px 0px 40px 30.5%;
+    min-height: 80px;
+    max-width: 40%;
+    border: 1px solid #333;
+    display: grid;
+    grid-template-rows: 1fr; 
+    justify-content: center;
+    align-items: center; 
+  }
+
+  input{
+    margin-bottom: 10px;
+  }
+
+
+
+  
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+
+    .card{
+        margin: 20px;
+        max-width: 100%;
+    }
+  }
+  
+  /* Estilos para tabletas */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      font-size: 15px;
+    }
+
+    .card{
+        margin: 40px 0px 40px 25.5%;
+        max-width: 50%;
+    }
+  }
+  
