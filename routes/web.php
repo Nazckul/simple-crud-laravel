@@ -21,3 +21,7 @@ Route::get('/', function () {
 Route::post ('/register', [UserController::class, 'register']);
 Route::post('/logout', [UserController::class, 'logout']);
 Route::post('/login', [UserController::class, 'login']);
+
+// Blog post related routes
+
+Route::post('/create-post', [PostController::class, 'createPost']);
